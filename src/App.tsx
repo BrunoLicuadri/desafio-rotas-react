@@ -7,6 +7,7 @@ import Computers from "./routes/HomePage/ProductPg/Computers"
 import Eletronics from "./routes/HomePage/ProductPg/Eletronics"
 import Books from "./routes/HomePage/ProductPg/Books"
 import AboutUs from "./routes/HomePage/AboutUs"
+import NotFound from "./routes/HomePage/NotFound"
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
             <Route path="books" element={<Books/>}/>
           </Route>
           <Route path="about" element={<AboutUs/>} />
+          <Route path="*" element={<NotFound/>} />
         </Route>
       </Routes>
     

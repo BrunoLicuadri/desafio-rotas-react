@@ -1,0 +1,19 @@
+.directions{
+    height: 550px;
+    width: 550px;
+    margin: 50px;
+}
+
+.text-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-content p{
+    margin: 20px 0;
+}
+
+.content-container{
+    justify-content: space-between;
+}
