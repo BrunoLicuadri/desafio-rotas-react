@@ -1,0 +1,16 @@
+.wlcm-text{
+    font: 24px;
+    color: var(--color-font-secondary);
+    margin: 20px 0;
+}
+
+.flag-container{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.flag-icon{
+    width: 50px;
+    height: 50px;
+}

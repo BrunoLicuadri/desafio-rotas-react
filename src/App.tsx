@@ -1,8 +1,20 @@
 
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import HomePage from "./routes/HomePage"
+import WelcomePg from "./components/WelcomePg"
+
 function App() {
 
   return (
-    <h1>Teste</h1>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} >
+          <Route index element={<WelcomePg />} />
+
+        </Route>
+      </Routes>
+    
+    </BrowserRouter>
   )
 }
 
