@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+  --color-bg-primary: #1E1E1E;
+  --color-bg-secondary: #C7C7C7;
+  --color-bg-header: #2d28ff;
+
+  --color-font-primary: #fff;
+  --color-font-tertiary: #000;
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter';
+}
+
+body {
+  background-color: var(--color-bg-primary);
+}
