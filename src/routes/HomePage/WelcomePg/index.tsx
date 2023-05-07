@@ -1,10 +1,10 @@
 import './styles.css';
-import france from '../../images/France.png';
-import brazil from '../../images/brazil_flag.png';
-import germany from'../../images/germany_flags.png';
-import italy from '../../images/italy_flags.png';
-import spain from '../../images/spain_flags.png';
-import usa from '../../images/usa_flags.png';
+import france from '../../../images/France.png';
+import brazil from '../../../images/brazil_flag.png';
+import germany from'../../../images/germany_flags.png';
+import italy from '../../../images/italy_flags.png';
+import spain from '../../../images/spain_flags.png';
+import usa from '../../../images/usa_flags.png';
 
 export default function WelcomePg(){
     return (

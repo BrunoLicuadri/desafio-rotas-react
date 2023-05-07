@@ -1,7 +1,11 @@
 
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import HomePage from "./routes/HomePage"
-import WelcomePg from "./components/WelcomePg"
+import WelcomePg from "./routes/HomePage/WelcomePg"
+import ProductPg from "./routes/HomePage/ProductPg"
+import Computers from "./routes/HomePage/ProductPg/Computers"
+import Eletronics from "./routes/HomePage/ProductPg/Eletronics"
+import Books from "./routes/HomePage/ProductPg/Books"
 
 function App() {
 
@@ -10,6 +14,11 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} >
           <Route index element={<WelcomePg />} />
+          <Route path="products" element={<ProductPg/>} >
+            <Route path="computers" element={<Computers/>}/>
+            <Route path="eletronics" element={<Eletronics/>}/>
+            <Route path="books" element={<Books/>}/>
+          </Route>
 
         </Route>
       </Routes>
