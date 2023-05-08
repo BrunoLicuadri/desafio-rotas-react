@@ -30,3 +30,8 @@ body {
 .dflex{
   display: flex;
 }
+
+a, a:hover{
+  color: unset;
+  text-decoration: none;
+}

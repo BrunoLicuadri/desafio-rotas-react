@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom"
 import HomePage from "./routes/HomePage"
 import WelcomePg from "./routes/HomePage/WelcomePg"
 import ProductPg from "./routes/HomePage/ProductPg"
@@ -15,7 +15,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} >
-          <Route index element={<WelcomePg />} />
+          <Route index element={<Navigate to="/home"/>} />
+          <Route path="home" element={<WelcomePg />} />
           <Route path="products" element={<ProductPg/>} >
             <Route path="computers" element={<Computers/>}/>
             <Route path="eletronics" element={<Eletronics/>}/>
